@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--theme-background);
+  --color-text-primary: var(--theme-text-primary);
+  --color-accent: var(--theme-accent);
+  --color-accent-hover: var(--theme-accent-hover);
+  --color-surface: var(--theme-surface);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    /* Default active theme (matches 'oatmeal' preset from shopConfig.js) */
+    --theme-background: #F5F2EA;
+    --theme-text-primary: #2C1E16;
+    --theme-accent: #D36B46;
+    --theme-accent-hover: #B25432;
+    --theme-surface: #FFFFFF;
+  }
+  
+  body {
+    background-color: var(--theme-background);
+    color: var(--theme-text-primary);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+  }
+}
